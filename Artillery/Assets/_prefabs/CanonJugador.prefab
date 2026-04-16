@@ -31,8 +31,7 @@ Transform:
   m_LocalPosition: {x: 0.054000854, y: 0.96, z: 0.033000946}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2866127788186892279}
+  m_Children: []
   m_Father: {fileID: 2743729289646564262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5901530413893799656
@@ -381,11 +380,11 @@ Transform:
   m_GameObject: {fileID: 5494835463734017128}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.22, z: 0}
+  m_LocalPosition: {x: 0.054000854, y: -0.26000005, z: 0.033000946}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6178024244843918227}
+  m_Father: {fileID: 2743729289646564262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8601249432384426678
 MeshFilter:
@@ -579,6 +578,37 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!1 &7696662482509268487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6709826938502087563}
+  m_Layer: 0
+  m_Name: PuntaCanon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6709826938502087563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7696662482509268487}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0018889152, y: 0.12402161, z: 0.015111276, w: 0.99216264}
+  m_LocalPosition: {x: 0.043337457, y: 2.579743, z: 0.04620263}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2743729289646564262}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7717108435936630794
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +730,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2743729289646564262}
+  - component: {fileID: 2027029189467274705}
   m_Layer: 0
   m_Name: PivoteCanon
   m_TagString: Untagged
@@ -715,11 +746,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8980058778829169150}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.12747955, y: 0.19888, z: 0.6490021}
+  m_LocalRotation: {x: -0.000000017345883, y: -0, z: -0.015228877, w: 0.9998841}
+  m_LocalPosition: {x: 0.099902935, y: 0.20777321, z: 0.64900285}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6178024244843918227}
+  - {fileID: 2866127788186892279}
+  - {fileID: 6709826938502087563}
   m_Father: {fileID: 5071950158376934018}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.745}
+--- !u!114 &2027029189467274705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8980058778829169150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39dc760a3f5968b4a93465a29ebb3ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Canon
+  BalaPrefab: {fileID: 7288096095432202230, guid: bad5c7b751e7c9f46b4fd5e028a2f0ba, type: 3}
