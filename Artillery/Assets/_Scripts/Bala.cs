@@ -2,15 +2,27 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject particulasExplosion;
+
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.tag == "Suelo") 
+        {
+            Invoke("Explotar", 3);
+        }
+        if (collision.gameObject.tag == "Obstaculo" || collision.gameObject.tag == "Objetivo") Explotar();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Explotar() 
     {
-        
+        GameObject particulas = Instantiate(particulasExplosion, transform.position, Quaternion.identity) as GameObject;
+        Canon.Bloqueado = false;
+        SeguirCamara.objetivo = null;
+
+        if (AdministradorJuego.SingletonAdministradorJuego != null)
+        {
+            AdministradorJuego.SingletonAdministradorJuego.VerificarFinDeJuego();
+        }
+        Destroy(this.gameObject);
     }
 }
