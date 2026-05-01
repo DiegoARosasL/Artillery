@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/_level 1.unity
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: 0907c91d5451ce84ea84e4ecd5a95472
+  - enabled: 1
+    path: Assets/Scenes/Fortaleza 1.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Fortaleza 2.unity
+    guid: 60d49c2c330ca004e897a504bf0cc6f1
+  - enabled: 1
+    path: Assets/Scenes/Fortaleza 3.unity
+    guid: 081f3779baf73fb4bbe137ee9239bd10
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 02a07c30a1094a94983b0d8e25fcd160, type: 3}
   m_UseUCBPForAssetBundles: 0
